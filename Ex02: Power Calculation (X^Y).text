@@ -1,5 +1,5 @@
 Algorithm Power_XY
-Var X, Y, Result : Real
+Var X, Y, Result : Real 
 Begin
     Write("Enter the value of X: ")
     Read(X)
