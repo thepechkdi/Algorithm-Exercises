@@ -1,1 +1,16 @@
+Algorithm Rectangle_Perimeter_Area
+Var Length, Width, Perimeter, Area : Real
+Begin
+   Write("Enter the length of the rectangle: ")
+   Read(Length)
+
+   Write("Enter the width of the rectangle: ")
+   Read(Width)
+
+   Perimeter ← 2 * (Length + Width)
+   Area ← Length * Width
+
+   Write("The perimeter of the rectangle is: ", Perimeter)
+   Write("The area of the rectangle is: ", Area)
+End
 
