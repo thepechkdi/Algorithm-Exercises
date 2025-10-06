@@ -7,6 +7,6 @@ Begin
    Read(Nom)
    Write("Entrez votre âge : ")
    Read(Age)
-   Write("Bonjour ", Nom, ", tu as ", Age, " ans et bienvenue à l'université.")
+   Write("Hello ", Nom, ", You are ", Age, " years old and welcome to the university.")
 End
 
