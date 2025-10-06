@@ -13,3 +13,6 @@ This project contains simple **algorithm exercises** written in **pseudocode** a
 - Problem solving logic
 
 
+## 💬 Author
+
+Created by Ya Ha — student in Artificial Intelligence at ISMONTIC Tangier 🇲🇦
