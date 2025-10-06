@@ -9,4 +9,3 @@ Begin
    Read(Age)
    Write("Hello ", Nom, ", You are ", Age, " years old and welcome to the university.")
 End
-
