@@ -1,0 +1,9 @@
+Algorithm Perimeter_Circle
+Const Pi = 3.14
+Var R, P : Real
+Begin
+   Write("Enter the radius of the circle:")
+   Read(R)
+   P ← 2 * Pi * R
+   Write("The perimeter of the circle is: ", P)
+End
