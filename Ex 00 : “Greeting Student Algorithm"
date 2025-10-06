@@ -1,1 +1,12 @@
+Algorithm Greeting_Student
+Var Nom : String
+Var Age : Integer
+
+Begin
+   Write("Entrez votre nom : ")
+   Read(Nom)
+   Write("Entrez votre âge : ")
+   Read(Age)
+   Write("Bonjour ", Nom, ", tu as ", Age, " ans et bienvenue à l'université.")
+End
 
