@@ -1,0 +1,22 @@
+Algorithm Operations
+Var a, b, sum, product, difference, division : Real
+Begin
+   Write("Enter first number: ")
+   Read(a)
+   Write("Enter second number: ")
+   Read(b)
+
+   sum ← a + b
+   product ← a * b
+   difference ← a - b
+   If b ≠ 0 Then
+       division ← a / b
+       Write("Division = ", division)
+   Else
+       Write("Division not possible (division by zero)")
+   EndIf
+
+   Write("Sum = ", sum)
+   Write("Product = ", product)
+   Write("Difference = ", difference)
+End
