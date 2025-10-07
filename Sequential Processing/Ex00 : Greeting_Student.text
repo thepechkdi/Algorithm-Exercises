@@ -1,0 +1,19 @@
+# ============================================================================================
+# Exercise 00 - Greeting Student Algorithm
+# Objective:
+#   To introduce the concept of an algorithm and understand its purpose in problem-solving.
+#   This exercise helps learners identify the basic components of an algorithm:
+#   inputs, processes, and outputs, and understand how logical steps solve a simple problem.
+# ===========================================================================================
+
+Algorithm Greeting_Student
+Var Nom : String
+Var Age : Integer
+
+Begin
+    Write("Entrez votre nom : ")
+    Read(Nom)
+    Write("Entrez votre âge : ")
+    Read(Age)
+    Write("Hello ", Nom, ", you are ", Age, " years old and welcome to the university.")
+End
