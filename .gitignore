@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
+.env
 .vscode/
+.idea/
 *.log
-*.env
-*.idea/
+*.zip
