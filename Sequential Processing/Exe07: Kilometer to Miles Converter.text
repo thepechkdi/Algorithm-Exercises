@@ -1,0 +1,20 @@
+#=======================================================================================================================
+#Exe07: Kilometer to Miles Converter.
+#Write a program that asks the user to enter a distance in kilometers, converts it into miles, and displays the result.
+#The conversion formula is:
+#1 kilometer = 0.621371 miles
+#Objective:
+#To practice using input, calculations, and output in algorithms. The goal is to create a program that reads a distance
+#in kilometers, converts it into miles using the given formula, and displays the result.
+#=======================================================================================================================
+
+Algorithm Convert_Km_to_Miles
+Const Conversion_Factor = 0.621371
+Var Km, Miles : Real
+
+Begin
+    Write("Enter distance in kilometers: ")
+    Read(Km)
+    Miles ← Km * Conversion_Factor
+    Write("Distance in miles is: ", Miles)
+End
