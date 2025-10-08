@@ -1,0 +1,18 @@
+#=============================================================================================================================
+#Ex0: Circle Perimeter.text
+#Objective
+#
+#We will write a program that asks the user to enter the radius of a circle, calculates its perimeter, and displays the result.
+#
+#P=2×π×R
+#==============================================================================================================================
+
+Algorithm Perimeter_Circle
+Const Pi = 3.14
+Var R, P : Real
+Begin
+   Write("Enter the radius of the circle:")
+   Read(R)
+   P ← 2 * Pi * R
+   Write("The perimeter of the circle is: ", P)
+End
