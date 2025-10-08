@@ -1,8 +1,0 @@
-Algorithm Temperature_Conversion
-Var Celsius, Fahrenheit : Real
-Begin
-   Write("Enter temperature in Celsius: ")
-   Read(Celsius)
-   Fahrenheit ← (Celsius * 9/5) + 32
-   Write("Temperature in Fahrenheit is: ", Fahrenheit)
-End
