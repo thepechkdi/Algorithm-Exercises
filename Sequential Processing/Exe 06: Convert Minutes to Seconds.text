@@ -1,0 +1,20 @@
+#============================================================================================================
+#Exe 06: Convert Minutes to Seconds
+#Write a program that asks the user to enter a number of minutes, converts it into seconds, 
+#and displays the result.
+#
+#Objective:
+#The goal of this exercise is to write a program that asks the user to enter a number of minutes,
+#then converts it into seconds and displays the result.
+#This helps you practice input/output operations, variables, and basic arithmetic expressions in algorithms.
+=============================================================================================================
+
+Algorithm Convert_Minutes_to_Seconds
+Var minutes, seconds : Integer
+
+Begin
+   Write("Enter the number of minutes: ")
+   Read(minutes)
+   seconds ← minutes * 60
+   Write("The number of seconds is: ", seconds)
+End
