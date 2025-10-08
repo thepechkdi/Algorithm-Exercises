@@ -1,0 +1,29 @@
+#================================================================================================
+#Exercise 05: Calculate Total Price with VAT
+#Write a program that asks the user to enter the price of an item and the VAT rate,
+#calculates the total price including tax (TTC), and displays the result.
+#Formula:
+#total_price ← base_price + (base_price * vat / 100)
+#
+#Objective:
+#
+#To create a program that asks the user to enter:
+#the price before tax (HT)
+#the VAT rate (% rate)
+#Then, the program calculates and displays the total price including tax (TTC) using the formula:
+#prix_ttc=prix_ht+(prix_ht×tva/100)
+=================================================================================================
+
+Algorithm Prix_TTC
+Var prix_ht, tva, prix_ttc : Real
+
+Begin
+   Write("Enter the price before tax (HT): ")
+   Read(prix_ht)
+   Write("Enter the VAT rate (%): ")
+   Read(tva)
+   
+   prix_ttc ← prix_ht + (prix_ht * tva / 100)
+   
+   Write("The total price including tax (TTC) is: ", prix_ttc)
+End
