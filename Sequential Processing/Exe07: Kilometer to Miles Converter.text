@@ -10,11 +10,11 @@
 
 Algorithm Convert_Km_to_Miles
 Const Conversion_Factor = 0.621371
-Var Km, Miles : Real
+Var Km, Miles : Flaot
 
 Begin
     Write("Enter distance in kilometers: ")
     Read(Km)
-    Miles ← Km * Conversion_Factor
+    Miles = Km * Conversion_Factor
     Write("Distance in miles is: ", Miles)
 End
