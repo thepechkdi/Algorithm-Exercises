@@ -1,20 +1,20 @@
 #=============================================================================
 #Ex02: Power Calculation (X^Y).text
 #Objective:
-#
 #To write an algorithm that asks the user to enter two real numbers X and Y, 
 #then calculates and displays the result of 
 #X^Y.
 #===========================================================================
 
 Algorithm Power_XY
-Var X, Y, Result : Real 
+Var X, Y, Result : Flaot 
 Begin
     Write("Enter the value of X: ")
     Read(X)
+    
     Write("Enter the value of Y: ")
     Read(Y)
 
-    Result ← X ^ Y
-
+    Result = X ^ Y
     Write("The result of", X, "raised to the power of", Y, "is:", Result)
+End
