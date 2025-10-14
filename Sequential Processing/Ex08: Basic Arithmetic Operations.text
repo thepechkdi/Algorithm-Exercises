@@ -1,0 +1,25 @@
+====================================================================================================================
+#Write an algorithm named Operations that calculates the sum, product, difference, and division of two real numbers.
+#Objective:
+#The objective of this exercise is to:
+#Practice using arithmetic operators (+, -, *, /)
+#And display all the results using Write() statements.
+#===================================================================================================================
+Algorithm Operations
+Var num1, num2, sum, product, difference, division : Float
+Begin
+   Write("Enter first number: ")
+   Read(num1)
+   Write("Enter second number: ")
+   Read(num2)
+
+   sum = num1 + num2
+   product = num1 * num2
+   difference = num1 - num2
+   division = num1 / num2
+
+   Write("Sum = ", sum)
+   Write("Product = ", product)
+   Write("Difference = ", difference)
+   Write("Division = ", division)
+End
