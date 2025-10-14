@@ -5,14 +5,12 @@
 #This exercise helps you understand how to process user-entered data and apply basic geometric formulas.
 #
 #Formulas used:
-#
 #Perimeter = 2 × (Length + Width)
-#
 #Area = Length × W
 #============================================================================================================================
 
 Algorithm Rectangle_Perimeter_Area
-Variable Length, Width, Perimeter, Area : Real
+Variable Length, Width, Perimeter, Area : Float
 Begin
    Write("Enter the length of the rectangle: ")
    Read(Length)
@@ -20,8 +18,8 @@ Begin
    Write("Enter the width of the rectangle: ")
    Read(Width)
 
-   Perimeter ← 2 * (Length + Width)
-   Area ← Length * Width
+   Perimeter = 2 * (Length + Width)
+   Area = Length * Width
 
    Write("The perimeter of the rectangle is: ", Perimeter)
    Write("The area of the rectangle is: ", Area)
