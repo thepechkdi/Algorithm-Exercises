@@ -11,9 +11,9 @@ Var Nom : String
 Var Age : Integer
 
 Begin
-    Write("Entrez votre nom : ")
+    Write(" Your name  : ")
     Read(Nom)
-    Write("Entrez votre âge : ")
+    Write(" Your Age : ")
     Read(Age)
     Write("Hello ", Nom, ", you are ", Age, " years old and welcome to the university.")
 End
