@@ -15,6 +15,6 @@ Var minutes, seconds : Integer
 Begin
    Write("Enter the number of minutes: ")
    Read(minutes)
-   seconds ← minutes * 60
+   seconds = minutes * 60
    Write("The number of seconds is: ", seconds)
 End
