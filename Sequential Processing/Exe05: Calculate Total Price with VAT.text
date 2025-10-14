@@ -6,7 +6,6 @@
 #total_price ← base_price + (base_price * vat / 100)
 #
 #Objective:
-#
 #To create a program that asks the user to enter:
 #the price before tax (HT)
 #the VAT rate (% rate)
@@ -20,10 +19,10 @@ Var prix_ht, tva, prix_ttc : Real
 Begin
    Write("Enter the price before tax (HT): ")
    Read(prix_ht)
-   Write("Enter the VAT rate (%): ")
+   Write("Enter the VAT rate : ")
    Read(tva)
    
-   prix_ttc ← prix_ht + (prix_ht * tva / 100)
+   prix_ttc = prix_ht + (prix_ht * tva / 100)
    
    Write("The total price including tax (TTC) is: ", prix_ttc)
 End
