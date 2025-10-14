@@ -1,22 +1,18 @@
 #===============================================================================================================================
 #Ex03: Temperature Conversion.text
 #Objective :
-#
 #To practice input/output operations in programming and apply mathematical expressions in algorithms.
-#
 #Write a program that asks the user to enter a temperature in degrees Celsius, converts it to Fahrenheit, and displays the result.
-#
 #The conversion formula is:
-#
 #𝐹=(𝐶𝑒𝑙𝑠𝑖𝑢𝑠×9/5)+32
 #=================================================================================================================================
 
 Algorithm Temperature_Conversion
-Var Celsius, Fahrenheit : Real
+Var Celsius, Fahrenheit : Falot
 Begin
    Write("Enter temperature in Celsius: ")
    Read(Celsius)
-   Fahrenheit ← (Celsius * 9/5) + 32
-   Write("Temperature in Fahrenheit is: ", Fahrenheit)
+   Fahrenheit = (Celsius * 9/5) + 32
+   Write("Temperature in Fahrenheit is: ", Fahrenheit,"F")
 End
 
