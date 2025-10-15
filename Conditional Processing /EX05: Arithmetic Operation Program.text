@@ -1,0 +1,41 @@
+#======================================================================================
+#Write a program that asks the user to enter two numbers and an operator (+, -, *, /), 
+#then displays the result of the operation based on the entered operator.
+#Objective:
+#The goal of this exercise is to help you understand how to:
+#Take multiple inputs from the user (numbers and symbols)
+#Use conditional statements (IF / ELSE IF) to perform different operations
+#Display results according to the user’s choice
+#======================================================================================
+Algorithm Arithmetic_Operation
+Var num1, num2, result : Real
+Var operator : Character
+
+Begin
+   Write("Enter first number: ")
+   Read(num1)
+
+   Write("Enter operator (+, -, *, /): ")
+   Read(operator)
+
+   Write("Enter second number: ")
+   Read(num2)
+
+   If operator = '+' Then
+        result = num1 + num2
+   ElseIf operator = '-' Then
+        result = num1 - num2
+   ElseIf operator = '*' Then
+        result = num1 * num2
+   ElseIf operator = '/' Then
+        If num2 != 0 Then
+            result = num1 / num2
+        Else
+            Write("Error: Division by zero not allowed.")
+        EndIf
+   Else
+        Write("Invalid operator.")
+   EndIf
+
+   Write("The result is: ", result)
+End
