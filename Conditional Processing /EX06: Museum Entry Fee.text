@@ -1,0 +1,32 @@
+#======================================================================================
+#Write a program that asks the user to enter their age and displays the ticket price 
+#for entering a museum:
+#Under 12 years old → Free
+#Between 12 and 17 years old → 5 €
+#18 years old and above → 10 €
+#
+#Objective:
+Create a simple algorithm that uses conditional statements to determine the correct 
+#ticket price based on the user’s age.
+This exercise helps you practice decision structures (IF / ELSE IF / ELSE) 
+#and logical comparisons.
+#======================================================================================
+Algorithm Museum_Ticket_Price
+Var age : Integer
+Var price : Integer
+
+Begin
+   Write("Enter your age: ")
+   Read(age)
+
+   If age < 12 Then
+      price = 0
+      Write("Entry is Free.")
+   ElseIf age >= 12 And age <= 17 Then
+      price = 5
+      Write("Ticket price is 5 €.")
+   Else
+      price = 10
+      Write("Ticket price is 10 €.")
+   EndIf
+End
