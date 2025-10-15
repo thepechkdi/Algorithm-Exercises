@@ -1,0 +1,24 @@
+#======================================================================================
+#Write a program that asks the user to enter an integer number and determines whether 
+#the number is positive, negative, or zero.
+#Objective:
+#The goal of this exercise is to create an algorithm (or program) that:
+#Asks the user to enter an integer number.
+#Checks whether the number is positive, negative, or zero.
+#Displays the appropriate message according to the result.
+#======================================================================================
+Algorithm Check_Number_Sign
+Var number : Integer
+
+Begin
+   Write("Enter an integer number: ")
+   Read(number)
+
+   If number > 0 Then
+       Write("The number is positive.")
+   ElseIf number < 0 Then
+       Write("The number is negative.")
+   Else
+       Write("The number is zero.")
+   EndIf
+End
