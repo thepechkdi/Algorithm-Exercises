@@ -1,0 +1,30 @@
+#=======================================================================================
+#Write a program that asks the user to enter the weight of a package and calculates
+#the delivery cost according to the following rules:
+#Less than 1 kg → €5 (fee = 5)
+#Between 1 kg and 5 kg → €10
+#More than 5 kg → €20
+#
+#Objective:
+#The goal of this exercise is to use conditional statements (IF / ELSE) to 
+#determine which delivery fee applies based on the package’s weight entered by the user
+#=======================================================================================
+Algorithm Delivery_Fee
+Var weight, fee : Flaot
+
+Begin
+   Write("Enter the weight of the package (kg): ")
+   Read(weight)
+
+   If weight < 1 Then
+        fee = 5
+   Else
+        If weight <= 5 Then
+            fee = 10
+        Else
+            fee = 20
+        EndIf
+   EndIf
+
+   Write("The delivery fee is: ", fee, " €")
+End
