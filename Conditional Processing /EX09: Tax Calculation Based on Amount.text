@@ -1,0 +1,30 @@
+#======================================================================================
+#Write a program that asks the user to enter an initial amount and applies a tax based
+#on that amount:
+#Less than €100 → 5%tax (tax = initial_amount * 0.05)
+#Between €100 and €500 → 10% tax
+#More than €500 → 15% tax
+#Objective
+#The objective of this exercise is to practice conditional statements (if, else if, else)
+#by calculating a tax rate depending on a given amount.
+#=======================================================================================
+Algorithm Tax_Calculation
+Var initial_amount, tax, total_amount : Flaot
+
+Begin
+    Write("Enter the initial amount (€): ")
+    Read(initial_amount)
+
+    If initial_amount < 100 Then
+        tax = initial_amount * 0.05
+    ElseIf initial_amount >= 100 and initial_amount <= 500 Then
+        tax = initial_amount * 0.10
+    Else
+        tax = initial_amount * 0.15
+    EndIf
+
+    total_amount = initial_amount + tax
+
+    Write("Applied tax = ", tax)
+    Write("Total amount including tax = ", total_amount)
+End
