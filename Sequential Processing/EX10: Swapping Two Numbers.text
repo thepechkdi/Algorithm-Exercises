@@ -1,0 +1,19 @@
+#=======================================================================================================================================
+#Write an algorithm that asks the user to enter two integers A and B, then swaps the contents of A and B, and finally displays A and B.
+#Objective:
+#The goal of this exercise is to understand how to exchange the values of two variables using a temporary variable.
+#This is an essential concept in programming and algorithm design, showing how to manipulate variable contents.
+#=======================================================================================================================================
+Algorithm Swap_Numbers
+Var A, B, Temp : Integer
+Begin
+   Write("Enter value of A: ")
+   Read(A)
+   Write("Enter value of B: ")
+   Read(B)
+   Temp = A
+   A = B
+   B = Temp
+   Write("After swapping, A = ", A)
+   Write("After swapping, B = ", B)
+End
