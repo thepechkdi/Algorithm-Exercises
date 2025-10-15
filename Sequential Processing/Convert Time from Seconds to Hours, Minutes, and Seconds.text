@@ -1,0 +1,27 @@
+#==============================================================================================================================
+#Write an algorithm that asks for a time T (integer) expressed in seconds, and converts it into hours, minutes, and seconds.
+#Example: T = 56263 seconds = 15 hours 37 minutes 43 seconds.
+#Objective
+#The goal of this exercise is to practice data manipulation and integer division by converting a given time (in seconds) 
+#into a more human-readable format of hours, minutes, and seconds.
+#
+#You will learn how to:
+#Use integer division (DIV) and modulo (MOD) operations.
+#Organize calculations step by step in a clear algorithmic structure.
+#============================================================================================================================
+
+Algorithm Convert_Time
+Var T, Hours, Minutes, Seconds : Integer
+
+Begin
+   Write("Enter time in seconds: ")
+   Read(T)
+
+   Hours = T DIV 3600
+   T = T MOD 3600
+
+   Minutes = T DIV 60
+   Seconds = T MOD 60
+
+   Write("Equivalent time: ", Hours, " hours ", Minutes, " minutes ", Seconds, " seconds")
+End
