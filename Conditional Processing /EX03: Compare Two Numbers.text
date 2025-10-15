@@ -1,0 +1,22 @@
+#==================================================================================================================
+#Write a program that asks the user to enter two numbers and displays which one is larger, or if the two are equal.
+#Objective:
+#The goal of this exercise is to practice conditional statements (IF / ELSE) in algorithms.
+#You will learn how to compare two values and display messages based on the result of the comparison.
+#==================================================================================================================
+Algorithm Compare_Two_Numbers
+Var A, B : Integer
+Begin
+   Write("Enter the first number:")
+   Read(A)
+   Write("Enter the second number:")
+   Read(B)
+   
+   If A > B Then
+       Write("The first number is greater than the second.")
+   ElseIf A < B Then
+       Write("The second number is greater than the first.")
+   Else
+       Write("Both numbers are equal.")
+   EndIf
+End
