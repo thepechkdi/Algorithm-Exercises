@@ -1,0 +1,32 @@
+#==================================================================================================================================
+#Determine Student Performance Based on Grade
+#Objective:
+#The goal of this exercise is to write a program that reads a student’s grade (from 0 to 20) and displays the performance category:
+#“Fail” if the grade is less than 10
+#“Passable” if between 10 and 12
+"“Fairly good” if between 12 and 14
+#“Good” if between 14 and 16
+#“Very good” if between 16 and 20
+#This teaches conditional statements (IF–ELSE) and logical comparison in algorithm design.
+#==================================================================================================================================
+Algorithm Student_Grade
+Var grade : Flaot
+
+Begin
+   Write("Enter the student's grade (0 to 20): ")
+   Read(grade)
+
+   If grade < 10 Then
+       Write("Fail")
+   ElseIf  grad >= 10 and grade < 12 Then
+       Write("Passable")
+   ElseIf grade >=12  and grade < 14 Then
+       Write("Fairly Good")
+   ElseIf grade >= 14 and grade < 16 Then
+       Write("Good")
+   ElseIf grade >= 14and grade <= 20 Then
+       Write("Very Good")
+   Else
+       Write("Invalid grade! Please enter a number between 0 and 20.")
+   EndIf
+End
