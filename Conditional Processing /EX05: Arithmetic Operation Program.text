@@ -8,7 +8,7 @@
 #Display results according to the user’s choice
 #======================================================================================
 Algorithm Arithmetic_Operation
-Var num1, num2, result : Real
+Var num1, num2, result : Integer
 Var operator : Character
 
 Begin
@@ -39,3 +39,4 @@ Begin
 
    Write("The result is: ", result)
 End
+
