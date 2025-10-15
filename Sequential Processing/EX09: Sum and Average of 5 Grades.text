@@ -1,0 +1,30 @@
+#==========================================================================================================
+#Write an algorithm that asks the user to enter 5 grades and displays their sum and their average."
+#Objective
+#o practice using input, arithmetic operations, and output in an algorithm.
+#To understand how to read multiple values, calculate the total (sum), and find the average using division.
+#In simple words:
+#We want to create an algorithm that reads 5 grades, adds them together, and then calculates the average
+#==========================================================================================================
+
+Algorithm Sum_Average_Grades
+Var note1, note2, note3, note4, note5, sum, average : Flaot
+
+Begin
+   Write("Enter grade 1: ")
+   Read(note1)
+   Write("Enter grade 2: ")
+   Read(note2)
+   Write("Enter grade 3: ")
+   Read(note3)
+   Write("Enter grade 4: ")
+   Read(note4)
+   Write("Enter grade 5: ")
+   Read(note5)
+
+   sum = note1 + note2 + note3 + note4 + note5
+   average = sum / 5
+
+   Write("The sum of grades is: ", sum)
+   Write("The average of grades is: ", average)
+End
