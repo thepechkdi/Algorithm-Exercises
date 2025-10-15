@@ -1,0 +1,37 @@
+#======================================================================================
+#Write a program that asks the user to enter a purchase amount and applies a discount
+#according to the following rules:
+#Less than €50: No discount.
+#Between €50 and €100: "10%" discount (discount = amount × 0.10).
+#More than €100: "20%" discount.
+#Objective
+#To create an algorithm that:
+#Reads the purchase amount from the user,
+#Determines the correct discount rate based on the amount,
+#Calculates the discount,
+#Displays the final price after applying the discount.
+#Goal: Practice using conditional statements (if–else) in algorithms.
+#======================================================================================
+Algorithm Purchase_Discount
+Var amount, discount, final_price : Flaot
+
+Begin
+   Write("Enter the purchase amount (€): ")
+   Read(amount)
+
+   If amount < 50 Then
+       discount = 0
+   Else
+       If amount >= 50 And amount <= 100 Then
+           discount = amount * 0.10
+       Else
+           discount = amount * 0.20
+       EndIf
+   EndIf
+
+   final_price ← amount - discount
+
+   Write("Discount applied: ", discount, " €")
+   Write("Final price after discount: ", final_price, " €")
+End
+
