@@ -1,0 +1,22 @@
+#================================================================================================================
+#Write a program that asks the user to enter an integer number and checks whether this number is even or odd.
+#Display a message indicating the result.
+#A number is said to be even if (number mod 2) = 0.
+#Objective
+#The goal of this exercise is to:
+#Practice input/output operations.
+#Use conditional statements (IF).
+#Apply the modulo operator  to check divisibility.
+#===============================================================================================================
+Algorithm Even_Odd_Check
+Var number : Integer
+Begin
+   Write("Enter an integer number:")
+   Read(number)
+   
+   If (number mod 2 = 0) Then
+      Write("The number is even.")
+   Else
+      Write("The number is odd.")
+   EndIf
+End
