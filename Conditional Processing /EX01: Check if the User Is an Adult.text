@@ -1,0 +1,22 @@
+#==============================================================================================================
+#Write a program that asks the user to enter their age and checks if they are an adult (18 years old or older).
+#Display a message indicating whether the user can access the service reserved for adults.
+#Objective
+#The goal of this exercise is to:
+#Practice using input/output instructions.
+#Apply conditional logic (IF...THEN...ELSE).
+#Learn how to compare numeric values.
+#==============================================================================================================
+Algorithm Age_Verification
+Var age : Integer
+
+Begin
+   Write("Enter your age: ")
+   Read(age)
+
+   If age >= 18 Then
+       Write("Access granted. You are an adult.")
+   Else
+       Write("Access denied. You must be 18 or older.")
+   EndIf
+End
