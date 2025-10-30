@@ -1,0 +1,31 @@
+#-----------------------------------------------------------------------------------------------------------------------------
+#A store charges 0.30 dh for the first ten photocopies, 0.25 dh for the next twenty, and 0.20 dh for all additional copies.
+#Write an algorithm that asks the user for the number of photocopies made and displays the corresponding bill.
+#Objective
+#To design an algorithm that calculates the total cost of photocopies based on a tiered pricing system:
+#0.30 dh per copy for the first 10 copies
+#0.25 dh per copy for the next 20 copies (from 11 → 30)
+#0.20 dh per copy for any copy above 30
+#The algorithm must:
+#Ask the user for the number of copies.
+#Apply the correct rate according to the number of copies.
+#Display the total bill.
+#-----------------------------------------------------------------------------------------------------------------------------
+Algorithm Photocopy_Bill
+Var copies : Integer
+Var total : Float
+
+Begin
+   Write("Enter the number of photocopies: ")
+   Read(copies)
+
+   If copies <= 10 Then
+       total = copies * 0.30
+   ElseIf copies <= 30 Then
+       total = (10 * 0.30) + ((copies - 10) * 0.25)
+   Else
+       total = (10 * 0.30) + (20 * 0.25) + ((copies - 30) * 0.20)
+   EndIf
+
+   Write("Total bill is: ", total, " dh")
+End
