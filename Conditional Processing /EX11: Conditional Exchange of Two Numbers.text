@@ -1,0 +1,32 @@
+#--------------------------------------------------------------------------------------------------------------------
+#Write an algorithm called Echange_Cond that swaps the contents of two numeric data items if they have the same sign.
+#Otherwise, it puts the sum of both in the first variable, and their product in the second variable.
+#Objective
+#The goal of this exercise is to practice using conditional logic (IF...ELSE) and variable assignments.
+#You will learn how to:
+#Test if two numbers have the same sign (both positive or both negative)
+#Swap their values if true
+#Otherwise, perform arithmetic operations (sum and product)
+#--------------------------------------------------------------------------------------------------------------------
+#Algorithm Echange
+Var A, B, Temp : Integer
+
+Begin
+   Write("Enter first integer A:")
+   Read(A)
+   Write("Enter second integer B:")
+   Read(B)
+
+   If (A > 0 AND B > 0) OR (A < 0 AND B < 0) Then
+        Temp = A
+        A = B
+        B = Temp
+   Else
+        Temp = A + B
+        B = A * B
+        A = Temp
+   EndIf
+
+   Write("New value of A:", A)
+   Write("New value of B:", B)
+End
