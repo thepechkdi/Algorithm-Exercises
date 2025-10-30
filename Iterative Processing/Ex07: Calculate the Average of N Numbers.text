@@ -1,0 +1,29 @@
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Write a program that asks the user to enter N numbers, then calculates the average of these numbers.
+#Example:
+#If the user enters 5 numbers (for example: 10, 20, 30, 40, 50), the output should be:→ average = 30
+# Objective:
+#The goal of this exercise is to practice using loops, input/output operations, and basic arithmetic to calculate the average of a series of numbers provided by the user.
+#You will learn how to:
+#Read multiple inputs from the user.
+#Use a loop to sum several numbers.
+#Compute the average by dividing the total sum by the number of inputs.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Algorithm Average_N_Numbers
+Var N, i : Integer
+Var number, sum, average : flaot
+
+Begin
+   Write("Enter how many numbers you want: ")
+   Read(N)
+   sum = 0
+
+   For i = 1 to N do
+       Write("Enter number ", i, ": ")
+       Read(number)
+       sum = sum + number
+   EndFor
+
+   average = sum / N
+   Write("The average is: ", average)
+End
