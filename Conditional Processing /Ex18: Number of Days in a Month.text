@@ -1,0 +1,29 @@
+#---------------------------------------------------------------------------------------------------------------------------------------------------------
+#Given a month, write an algorithm Nbre_Jours that returns the number of days in that month.
+#Objective:
+#To design an algorithm that takes the name or number of a month (for example, “February” or “2”) and returns how many days that month has — for instance:
+#January → 31
+#February → 28 (or 29 for leap year)
+#April → 30
+#This helps you practice conditional statements and logical decision-making in algorithms.
+#----------------------------------------------------------------------------------------------------------------------------------------------------------
+#Algorithm Nbre_Jours
+Var month, days : Integer
+
+Begin
+   Write("Enter the month number (1 to 12): ")
+   Read(month)
+
+   If month = 1 or month = 3 or month = 5 or month = 7 or month = 8 or month = 10 or month = 12 Then
+       days = 31
+   Else If month = 4 or month = 6 or month = 9 or month = 11 Then
+       days = 30
+   Else If month = 2 Then
+       days = 28
+   Else
+       Write("Invalid month number!")
+       Stop
+   EndIf
+
+   Write("The number of days in this month is: ", days)
+End
