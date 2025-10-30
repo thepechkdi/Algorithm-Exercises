@@ -1,0 +1,36 @@
+#---------------------------------------------------------------------------------------------------------------------------------------------------------
+#The products sold in a store are classified into three categories according to their VAT rate:
+#Category A = 7%, Category B = 20%, and Category C = 25%.
+#Write an algorithm called Prix that calculates the final price including tax (TTC) of a product, knowing its price before tax (HT) and its category.
+#Objective 
+#To design an algorithm that asks the user for:
+#the price before tax (HT),
+#and the category of the product (A, B, or C),
+#then calculates and displays the price including tax (TTC) using the appropriate VAT rate.
+#----------------------------------------------------------------------------------------------------------------------------------------------------------
+#Algorithm Price_With_Tax
+Var Price_HT, Price_TTC, VAT : flaot
+Var Category : Character
+
+Begin
+   Write("Enter the price before tax (HT): ")
+   Read(Price_HT)
+
+   Write("Enter the category (A, B, or C): ")
+   Read(Category)
+
+   If Category = 'A' Then
+      VAT = 0.07
+   ElseIf Category = 'B' Then
+      VAT = 0.20
+   ElseIf Category = 'C' Then
+      VAT = 0.25
+   Else
+      Write("Invalid category!")
+      Stop
+   EndIf
+
+   Price_TTC = Price_HT + (Price_HT * VAT)
+
+   Write("The price including tax (TTC) is: ", Price_TTC)
+End
