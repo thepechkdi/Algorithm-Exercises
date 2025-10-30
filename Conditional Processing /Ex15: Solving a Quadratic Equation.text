@@ -1,0 +1,37 @@
+#-------------------------------------------------------------------------------------------------------------------------------------
+#Write an algorithm that displays the solution(s) of a second-degree equation.
+#Objective
+#The goal of this exercise is to create an algorithm that calculates and displays the solution(s) of a quadratic equation of the form:
+#   ax2+bx+c=0
+#Depending on the value of the discriminant (Δ), the equation can have:
+#
+#Two real solutions if Δ > 0
+#One real solution if Δ = 0
+#No real solution if Δ < 0
+#
+#The discriminant is calculated as:
+#   Δ=b^2−4ac
+#--------------------------------------------------------------------------------------------------------------------------------------
+#Algorithm Quadratic_Equation_Solver
+Var a, b, c, delta, x1, x2 : flaot
+Begin
+   Write("Enter value of a: ")
+   Read(a)
+   Write("Enter value of b: ")
+   Read(b)
+   Write("Enter value of c: ")
+   Read(c)
+
+   delta = b*b - 4*a*c
+
+   If delta > 0 Then
+       x1 = (-b - sqrt(delta)) / (2*a)
+       x2 = (-b + sqrt(delta)) / (2*a)
+       Write("Two real solutions: x1 = ", x1, " and x2 = ", x2)
+   ElseIf delta = 0 Then
+       x1 = -b / (2*a)
+       Write("One real solution: x = ", x1)
+   Else
+       Write("No real solution")
+   EndIf
+End
