@@ -1,0 +1,21 @@
+#---------------------------------------------------------------------------------------------------------------
+#Write a program that asks the user to enter a number N, then displays all the even numbers between 1 and N.
+# Objective
+#The goal of this exercise is to practice loops and conditional tests in algorithms.
+#You will learn how to:
+#Use a loop to go through a range of numbers.
+#Use a condition (if) to check if a number is even.
+#Display only the even numbers between 1 and N.
+#---------------------------------------------------------------------------------------------------------------
+Algorithm Even_Numbers
+Var N, i : Integer
+Begin
+   Write("Enter a number N: ")
+   Read(N)
+   
+   For i = 1 To N Do
+       If (i MOD 2 = 0) Then
+           Write(i)
+       EndIf
+   EndFor
+End
