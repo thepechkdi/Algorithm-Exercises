@@ -1,0 +1,28 @@
+#-----------------------------------------------------------------------------------------------------------------------------------------
+#The inhabitants of a city pay taxes according to the following rules:
+#Men over 20 years old pay taxes.
+#Women pay taxes if they are between 18 and 35 years old.
+#Others do not pay taxes.
+#
+#Write an algorithm that asks for the age and gender of an inhabitant and displays whether he or she is taxable.
+#Objective
+#To design an algorithm that determines whether a person must pay taxes based on their age and gender according to specific conditions.
+#The algorithm will take age and gender as input and display whether the person is taxable or not taxable.
+#---------------------------------------------------------------------------------------------------------------------------------------
+#Algorithm Taxable_Check
+Var age : Integer
+Var gender : Character
+Begin
+    Write("Enter gender (M for man, F for woman): ")
+    Read(gender)
+    Write("Enter age: ")
+    Read(age)
+
+    If (gender = 'M' AND age > 20) Then
+        Write("You are taxable.")
+    ElseIf (gender = 'F' AND age >= 18 AND age <= 35) Then
+        Write("You are taxable.")
+    Else
+        Write("You are not taxable.")
+    EndIf
+End
