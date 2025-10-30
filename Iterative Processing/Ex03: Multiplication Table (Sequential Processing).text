@@ -1,0 +1,25 @@
+#--------------------------------------------------------------------------------------------
+#Write an algorithm that asks the user to enter a number N,
+#then displays the multiplication table of that number (from 1 to 10).
+# Objective
+#The goal is to practice sequential algorithms and use repetition in a simple form.
+#This exercise helps you understand how to:
+#Read an input from the user
+#Perform repeated calculations
+#Display results in a structured format
+#In short: you will generate a multiplication table for any number entered by the user.
+---------------------------------------------------------------------------------------------
+#Algorithm Multiplication_Table
+Var N, i, Result : Integer
+
+Begin
+   Write("Enter a number N: ")
+   Read(N)
+
+   i ← 1
+   While i <= 10 Do
+      Result = N * i
+      Write(N, " x ", i, " = ", Result)
+      i = i + 1
+   EndWhile
+End
