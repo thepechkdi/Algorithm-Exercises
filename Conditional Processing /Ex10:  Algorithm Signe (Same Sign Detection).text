@@ -1,0 +1,20 @@
+#---------------------------------------------------------------------------------------------------------------------------
+#Write an algorithm called Signe that determines whether two given integers have the same sign or not.
+# Objective
+#The goal of this exercise is to analyze two integer numbers and determine if both are positive or both are negative.
+#If both numbers share the same sign, the algorithm will display “Same sign”; otherwise, it will display “Different signs”.
+#--------------------------------------------------------------------------------------------------------------------------
+#Algorithm Signe
+Var A, B : Integer
+Begin
+   Write("Enter first number:")
+   Read(A)
+   Write("Enter second number:")
+   Read(B)
+
+   If (A > 0 AND B > 0) OR (A < 0 AND B < 0) Then
+       Write("Both numbers have the same sign")
+   Else
+       Write("Numbers have different signs")
+   EndIf
+End
