@@ -1,0 +1,13 @@
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Write a program that displays the numbers from 1 to 5 using iterative processing.
+# Objective:
+#The goal of this exercise is to practice the concept of iteration (loops) — using a repetition structure to execute the same instruction multiple times until a condition is met.
+#In this case, the algorithm must repeat the display operation five times to print numbers from 1 to 5.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Algorithm Display_Numbers_1_to_5
+Var i : Integer
+Begin
+   For i = 1 to 5 do
+       Write(i)
+   EndFor
+End
