@@ -1,0 +1,21 @@
+#---------------------------------------------------------------------
+#Write a program that asks the user to enter a number X (the base),
+#then displays the powers of X from X¹ up to X²⁰.
+#Objective:
+#To practice loops and mathematical operations.
+#To understand how to repeatedly calculate powers of a number.
+#To display sequential results (X¹, X², X³, …, X²⁰).
+#--------------------------------------------------------------------
+#Algorithm Power_of_Number
+Var X, Result : flaot
+Var i : Integer
+
+Begin
+    Write("Enter a number (base): ")
+    Read(X)
+
+    For i = 1 to 20 Do
+        Result = X ^ i
+        Write("X raised to power ", i, " = ", Result)
+    EndFor
+End
