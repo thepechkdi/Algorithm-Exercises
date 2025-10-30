@@ -1,0 +1,12 @@
+#----------------------------------------------------------------------------------------------------------------------------
+#Write a program that displays the message "Hello, world" five times.
+#Objective:
+#To understand how to use loops (repetition structures) in an algorithm to repeat an instruction a specific number of times.
+#---------------------------------------------------------------------------------------------------------------------------
+#Algorithm Hello_World_5_Times
+Var i : Integer
+Begin
+   For i = 1 to 5 Do
+       Write("Hello, world")
+   EndFor
+End
