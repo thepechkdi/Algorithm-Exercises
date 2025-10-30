@@ -1,0 +1,34 @@
+#-------------------------------------------------------------------------------------------------------------------------
+#Write an algorithm that asks the user for a child’s age.
+#Then, inform them of their category:
+#"Poussin" from 6 to 7 years old
+#"Pupille" from 8 to 9 years old
+#"Minime" from 10 to 11 years old
+#"Cadet" after 12 years old
+#Objective
+#To create an algorithm that asks the user for a child’s age and displays their category according to the following rules:
+#Age Range	Category
+#6 – 7 years	Poussin
+#8 – 9 years	Pupille
+#10 – 11 years	Minime
+#12 years and above	Cadet
+#--------------------------------------------------------------------------------------------------------------------------
+#Algorithm Child_Category
+Var age : Integer
+
+Begin
+   Write("Enter the child's age: ")
+   Read(age)
+
+   If age >= 6 and age <= 7 Then
+        Write("Category: Poussin")
+   ElseIf age >= 8 and age <= 9 Then
+        Write("Category: Pupille")
+   ElseIf age >= 10 and age <= 11 Then
+        Write("Category: Minime")
+   ElseIf age >= 12 Then
+        Write("Category: Cadet")
+   Else
+        Write("No category available for this age.")
+   EndIf
+End
