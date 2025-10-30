@@ -1,0 +1,19 @@
+#------------------------------------------------------------------------------------------------------------------------------
+#Write a program that asks the user to enter a number N, then calculates the sum of all numbers from 1 to N using a FOR loop.
+#Example: If the user enters 5, the program calculates 1 + 2 + 3 + 4 + 5 = 15.
+# Objective
+#To practice using a loop (FOR) in an algorithm.
+#To understand how to accumulate a total (sum) from 1 to N.
+#To reinforce input/output and arithmetic operations in algorithmic logic.
+=------------------------------------------------------------------------------------------------------------------------------
+Algorithm Sum_1_to_N
+Var N, i, Sum : Integer
+Begin
+    Write("Enter a number N: ")
+    Read(N)
+    Sum = 0
+    For i ← 1 To N Do
+        Sum = Sum + i
+    EndFor
+    Write("The sum of numbers from 1 to ", N, " is: ", Sum)
+End
