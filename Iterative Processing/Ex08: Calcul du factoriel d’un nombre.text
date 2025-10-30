@@ -1,0 +1,21 @@
+#---------------------------------------------------------------------------------------------------------------------------------------------
+#Write a program that asks the user to enter a number N, then calculates the factorial of N (N!).
+#Reminder: The factorial of a number N, written N!, is the product of all integers from 1 to N.
+#Example:
+#5! = 5 × 4 × 3 × 2 × 1 = 120
+#Objective
+#Understand how to use loops (repetition) in algorithms.
+#Learn how to calculate the factorial of a number using iterative logic.
+#Strengthen understanding of variables, assignments, and input/output instructions.
+#---------------------------------------------------------------------------------------------------------------------------------------------
+Algorithm Factorial_Calculation
+Var N, i, F : Integer
+Begin
+   Write("Enter a number N:")
+   Read(N)
+   F = 1
+   For i ← 1 To N Do
+      F = F * i
+   EndFor
+   Write("The factorial of ", N, " is: ", F)
+End
