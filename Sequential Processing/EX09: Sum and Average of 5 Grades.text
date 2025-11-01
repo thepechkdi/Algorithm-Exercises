@@ -1,4 +1,5 @@
 #==========================================================================================================
+#EX09: Sum and Average of 5 Grades
 #Write an algorithm that asks the user to enter 5 grades and displays their sum and their average."
 #Objective
 #o practice using input, arithmetic operations, and output in an algorithm.
