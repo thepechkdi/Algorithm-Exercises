@@ -1,5 +1,5 @@
 #=======================================================================================================================
-#Exe07: Kilometer to Miles Converter.
+#Exe07: Kilometer to Miles Converter
 #Write a program that asks the user to enter a distance in kilometers, converts it into miles, and displays the result.
 #The conversion formula is:
 #1 kilometer = 0.621371 miles
