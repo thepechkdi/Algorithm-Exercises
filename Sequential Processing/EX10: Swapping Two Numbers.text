@@ -1,4 +1,5 @@
 #=======================================================================================================================================
+#EX10: Swapping Two Numbers
 #Write an algorithm that asks the user to enter two integers A and B, then swaps the contents of A and B, and finally displays A and B.
 #Objective:
 #The goal of this exercise is to understand how to exchange the values of two variables using a temporary variable.
