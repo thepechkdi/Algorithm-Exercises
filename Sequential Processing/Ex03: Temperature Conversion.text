@@ -1,5 +1,5 @@
 #===============================================================================================================================
-#Ex03: Temperature Conversion.text
+#Ex03: Temperature Conversion
 #Objective :
 #To practice input/output operations in programming and apply mathematical expressions in algorithms.
 #Write a program that asks the user to enter a temperature in degrees Celsius, converts it to Fahrenheit, and displays the result.
