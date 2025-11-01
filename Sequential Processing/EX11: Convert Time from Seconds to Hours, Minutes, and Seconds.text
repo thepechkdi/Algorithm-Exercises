@@ -1,4 +1,5 @@
 #==============================================================================================================================
+#EX11: Convert Time from Seconds to Hours, Minutes, and Seconds
 #Write an algorithm that asks for a time T (integer) expressed in seconds, and converts it into hours, minutes, and seconds.
 #Example: T = 56263 seconds = 15 hours 37 minutes 43 seconds.
 #Objective
