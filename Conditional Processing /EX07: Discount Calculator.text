@@ -29,7 +29,7 @@ Begin
        EndIf
    EndIf
 
-   final_price ← amount - discount
+   final_price = amount - discount
 
    Write("Discount applied: ", discount, " €")
    Write("Final price after discount: ", final_price, " €")
