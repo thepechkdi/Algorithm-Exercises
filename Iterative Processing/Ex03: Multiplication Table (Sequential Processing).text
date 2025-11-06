@@ -16,10 +16,10 @@ Begin
    Write("Enter a number N: ")
    Read(N)
 
-   i ← 1
+   i = 1
    While i <= 10 Do
       Result = N * i
-      Write(N, " x ", i, " = ", Result)
+      Write(N, " * ", i, " = ", Result)
       i = i + 1
    EndWhile
 End
