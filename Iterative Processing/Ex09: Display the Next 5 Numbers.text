@@ -1,0 +1,19 @@
+#---------------------------------------------------------------------------------------------------------------------------------
+#Write an algorithm that asks for a starting number and then displays the next 5 numbers using a For loop.
+#For example, if the user enters the number 5, the program will display the numbers from 6 to 10.
+#Objective
+#To write an algorithm that takes a starting number as input and displays the 5 numbers that follow it using a For loop structure.
+#=================================================================================================================================
+Algorithm NextTenNumber
+number, i : Integer
+
+Begin
+    Write "Enter a  number: "
+    Read (number)
+
+    For i = number + 1 to number + 10
+        Write ()i
+    EndFor
+End
+
+
