@@ -18,11 +18,11 @@ Begin
    Write("Enter time in seconds: ")
    Read(T)
 
-   Hours = T DIV 3600
-   T = T MOD 3600
+   Hours = T / 3600
+   T = T % 3600
 
-   Minutes = T DIV 60
-   Seconds = T MOD 60
+   Minutes = T / 60
+   Seconds = T % 60
 
    Write("Equivalent time: ", Hours, " hours ", Minutes, " minutes ", Seconds, " seconds")
 End
