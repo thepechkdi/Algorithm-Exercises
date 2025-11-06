@@ -25,7 +25,7 @@ Begin
    Write("Enter the third grade (0–20): ")
    Read(note3)
 
-   average ← (note1 + note2 + note3) / 3
+   average = (note1 + note2 + note3) / 3
 
    Write("The average is: ", average)
 
