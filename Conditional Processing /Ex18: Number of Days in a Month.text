@@ -22,7 +22,7 @@ Begin
        days = 28
    Else
        Write("Invalid month number!")
-       Stop
+       
    EndIf
 
    Write("The number of days in this month is: ", days)
