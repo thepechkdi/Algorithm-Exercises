@@ -14,7 +14,7 @@
 =================================================================================================
 
 Algorithm Prix_TTC
-Var prix_ht, tva, prix_ttc : Real
+Var prix_ht, tva, prix_ttc : flaot
 
 Begin
    Write("Enter the price before tax (HT): ")
