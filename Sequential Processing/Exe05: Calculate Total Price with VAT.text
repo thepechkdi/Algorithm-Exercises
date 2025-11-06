@@ -19,7 +19,7 @@ Var prix_ht, tva, prix_ttc : flaot
 Begin
    Write("Enter the price before tax (HT): ")
    Read(prix_ht)
-   Write("Enter the VAT rate : ")
+   Write("Enter the tva rate : ")
    Read(tva)
    
    prix_ttc = prix_ht + (prix_ht * tva / 100)
