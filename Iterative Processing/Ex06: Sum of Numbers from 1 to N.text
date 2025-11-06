@@ -12,7 +12,7 @@ Begin
     Write("Enter a number N: ")
     Read(N)
     Sum = 0
-    For i ← 1 To N Do
+    For i = 1 To N Do
         Sum = Sum + i
     EndFor
     Write("The sum of numbers from 1 to ", N, " is: ", Sum)
