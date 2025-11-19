@@ -1,0 +1,53 @@
+#------------------------------------------------------------------------------------------------------------------
+#Write an algorithm that asks the user to enter an integer n, greater than 2, repeatedly until the answer is valid.
+#Then, the algorithm computes and displays all Fibonacci sequence terms that are less than or equal to n.
+#
+#The Fibonacci sequence is defined as:
+𝑈0=0
+U1=U1
+Uk+2 =Uk+1
+#Objective
+#Ensure the user enters a valid integer greater than 2.
+#Generate the Fibonacci sequence starting from 𝑈0
+#Display all Fibonacci terms less than or equal to n.
+#Stop when the next term would be greater than n.
+#--------------------------------------------------------------------------------------------------------------------
+BEGIN
+    // 1. Input validation
+    REPEAT
+        WRITE "Enter an integer n (greater than 2): "
+        READ n
+    UNTIL n > 2
+
+    // 2. Initialize Fibonacci terms
+    U0 ← 0
+    U1 ← 1
+
+    // Display U0 and U1 only if ≤ n
+    IF U0 ≤ n THEN
+        WRITE U0
+    END IF
+
+    IF U1 ≤ n THEN
+        WRITE U1
+    END IF
+
+    // 3. Generate and display Fibonacci terms ≤ n
+    WHILE TRUE DO
+        U ← U0 + U1
+        
+        IF U > n THEN
+            BREAK
+        END IF
+        
+        WRITE U
+        
+        // Shift for next iteration
+        U0 ← U1
+        U1 ← U
+    END WHILE
+END
+
+	​
+
+	​
