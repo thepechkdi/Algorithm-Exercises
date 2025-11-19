@@ -5,9 +5,8 @@
 #The objective of this exercise is to:
 #Read an integer n
 #Compute the partial sum of the harmonic series, defined as: 
-$$
-S = \sum_{i=1}^{n} \frac{1}{i}
-$$
+
+$$S = \sum_{i=1}^{n} \frac{1}{i}$$
 
 #Display the final value of S
 #This exercise helps students practice loops, accumulation, and fraction calculations in pseudocode.
