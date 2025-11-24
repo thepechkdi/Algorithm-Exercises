@@ -1,0 +1,16 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    S = 0
+
+    FOR i = 1 TO n DO
+        s = 0
+        FOR j = 1 TO i DO
+            s = s + j
+        END FOR
+        S = S + s
+    END FOR
+
+    WRITE "Double sum S =", S
+END
