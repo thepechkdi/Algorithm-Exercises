@@ -5,7 +5,7 @@ BEGIN
     S = 0
     i = 1
 
-    WHILE S + i ≤ n DO
+    WHILE S + i <= n DO
         S = S + i
         i = i + 1
     END WHILE
