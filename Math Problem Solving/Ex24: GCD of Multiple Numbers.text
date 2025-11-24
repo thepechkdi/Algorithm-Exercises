@@ -1,0 +1,23 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    G = 1
+
+    FOR i = 2 TO n DO
+        
+        a = G
+        b = i
+
+        WHILE b =! 0 DO
+            r = a MOD b
+            a = b
+            b = r
+        END WHILE
+
+        G = a
+
+    END FOR
+
+    WRITE "GCD =", G
+END
