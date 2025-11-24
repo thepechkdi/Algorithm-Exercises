@@ -1,0 +1,16 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    S = 0
+
+    FOR i = 1 TO n DO
+        IF i ≤ 50 THEN
+            S = S + i
+        ELSE
+            S = S + 0   // do nothing
+        END IF
+    END FOR
+
+    WRITE "Sum with threshold S =", S
+END
