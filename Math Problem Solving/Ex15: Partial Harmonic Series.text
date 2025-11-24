@@ -1,0 +1,12 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    s = 0
+
+    FOR i = 1 TO n DO
+        s = s + (1 / i)
+    END FOR
+
+    WRITE "Harmonic sum s =", s
+END
