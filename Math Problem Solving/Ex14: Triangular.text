@@ -1,0 +1,16 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    S = 0
+
+    FOR i = 1 TO n DO
+        FOR j = 1 TO i DO
+            IF j MOD 2 = 0 THEN
+                S = S + j
+            END IF
+        END FOR
+    END FOR
+
+    WRITE "Triangular conditional sum S =", S
+END
