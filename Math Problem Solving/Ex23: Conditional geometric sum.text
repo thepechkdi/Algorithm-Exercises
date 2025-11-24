@@ -1,0 +1,18 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    S = 0
+
+    FOR i = 1 TO n DO
+        IF i MOD 2 = 1 THEN          // odd
+            r = 3
+        ELSE                         // even
+            r = 2
+        END IF
+
+        S = S + (r ^ i)
+    END FOR
+
+    WRITE "S =", S
+END
