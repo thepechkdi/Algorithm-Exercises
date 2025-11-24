@@ -1,0 +1,29 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    M = -1
+
+    FOR i = 2 TO n DO
+
+    // check if i is prime
+        countDiv = 0
+
+        FOR j = 2 TO i-1 DO
+            IF i MOD j = 0 THEN
+                countDi = countDiv + 1
+            END IF
+        END FOR
+
+     // i is prime
+     IF countDiv = 0 THEN       
+            value = i * i
+            IF value > M THEN
+                M = value
+            END IF
+        END IF
+
+    END FOR
+
+    WRITE "Maximum squared prime =", M
+END
