@@ -1,0 +1,16 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    S = 0
+
+    FOR i = 1 TO n DO
+        IF i MOD 2 = 1 THEN       // odd
+            S = S + i
+        ELSE                      // even
+            S = S - i
+        END IF
+    END FOR
+
+    WRITE "Alternating sum S =", S
+END
