@@ -1,0 +1,12 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    P = 1
+
+    FOR i = 1 TO n DO
+        P = P * i
+    END FOR
+
+    WRITE "Product P =", P
+END
