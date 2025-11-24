@@ -1,0 +1,28 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    IF n = 0 THEN
+        WRITE "S = 0"
+        STOP
+    END IF
+
+    a = 1
+    b = 1
+    S = 0
+
+    FOR i = 1 TO n DO
+        
+        IF i = 1 THEN
+            Fi = 1
+        ELSE IF i = 2 THEN
+            Fi = 1
+        ELSE
+            Fi = a + b
+            a = b
+            b = Fi
+        END IF
+
+        S = S + Fi
+
+    END FOR
