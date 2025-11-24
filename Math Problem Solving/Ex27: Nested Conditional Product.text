@@ -1,0 +1,26 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    P = 1
+
+    FOR i = 1 TO n DO
+
+        IF i MOD 2 = 1 THEN
+            // odd: multiply by i
+            P = P * i
+
+        ELSE
+            // even: multiply by product of j = 1..i
+            a = 1
+            FOR j ← 1 TO i DO
+                a ← a * j
+            END FOR
+            P ← P * a
+
+        END IF
+
+    END FOR
+
+    WRITE "P =", P
+END
