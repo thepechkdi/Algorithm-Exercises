@@ -1,0 +1,11 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    FOR i = 1 TO n - 2 DO
+        sum = i + (i + 1) + (i + 2)
+        Mi = sum / 3
+        WRITE "M", i, " = ", Mi
+    END FOR
+
+END
