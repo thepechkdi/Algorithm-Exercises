@@ -1,0 +1,12 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    S = 0
+
+    FOR i = 1 TO n DO
+        S = S + i * i * i
+    END FOR
+
+    WRITE "Sum of cubes S =", S
+END
