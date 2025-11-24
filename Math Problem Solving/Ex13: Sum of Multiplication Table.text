@@ -1,0 +1,14 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    S = 0
+
+    FOR i = 1 TO n DO
+        FOR j = 1 TO n DO
+            S = S + (i * j)
+        END FOR
+    END FOR
+
+    WRITE "Sum of multiplication table S =", S
+END
