@@ -1,0 +1,14 @@
+BEGIN
+    WRITE "Enter n:"
+    READ n
+
+    C = 0
+
+    FOR i = 1 TO n DO
+        IF i MOD 3 = 0 THEN
+            C = C + 1
+        END IF
+    END FOR
+
+    WRITE "Count of multiples of 3 C =", C
+END
